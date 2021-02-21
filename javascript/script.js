@@ -5,27 +5,26 @@ let password = document.getElementById('password');
 let passwordConfirm = document.getElementById('passwordConfirm');
 let email = document.getElementById('email')
 
+// Form validation
 form.addEventListener('submit', (e) =>{
-
-    if(fname.value ==="")   {
+    if(fname.value === "")   {
         e.preventDefault();
         alert("Error: Name field can not be empty!");
     }
-    if(surname.value ==="")   {
+    if(surname.value === "")   {
         e.preventDefault();
         alert("Error: Surname field can not be empty!");
     }
-    if(password.value ==="" || passwordConfirm.value ==="")   {
+    if(password.value === "" || passwordConfirm.value ==="")   {
         e.preventDefault();
         alert("Error: Password field can not be empty!");
     }
-    if(email.value ==="")   {
+    if(email.value === "")   {
         e.preventDefault();
-        alert("Error: Email box can not be empty!");
+        alert("Error: Email field can not be empty!");
     }
-    
-    
-
+    if (password.value !== passwordConfirm.value)    {
+        e.preventDefault();
+        alert("Password does not match!")
+    }
 });
-
-
