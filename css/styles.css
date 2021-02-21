@@ -75,3 +75,13 @@ button:hover    {
 button:focus    {
     outline: none;
 }
+
+@media  (max-width: 320px)  {
+    .form   {
+        width: 290px;
+    }
+
+    input   {
+        width: 240px;
+    }
+}
